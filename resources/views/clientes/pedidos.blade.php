@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Adler - Mis Pedidos</title>
+  <title>@include ('global.name') - Mis Pedidos</title>
     @include ('global.icon')
   <meta name="csrf-token" content="{{ csrf_token() }}">
   <style>
@@ -269,7 +269,7 @@ a{text-decoration:none;}
   <div class="header" style="position: sticky; top: 0; z-index: 999;backdrop-filter:blur(3px);background:rgba(256,256,256,.7)">
     <div class="header-inner">
       <div class="logo" >
-                    <a href="{{url('/')}} " style="display:flex"><img src="{{asset('image/logo.webp')}}" style="width:140px;"></a>
+                    <a href="{{url('/')}} " style="display:flex"><img src="{{asset('image/logo.webp')}}" style="width:70px;"></a>
       </div>
       <div class="search">
         <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M21 21l-4.35-4.35M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>

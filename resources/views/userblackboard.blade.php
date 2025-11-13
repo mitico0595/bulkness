@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Security-Policy"   content="img-src 'self' data: https://lh3.googleusercontent.com https://*.googleusercontent.com">
 
-    <title>Amigurumis - usuario</title>
+    <title>@include ('global.name') - usuario</title>
     @include ('global.icon')
     <link rel="stylesheet" href="{{asset('css/user.css')}}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
@@ -46,7 +46,7 @@
             <div class="header-content">
                 <!-- Logo -->
                 <div class="logo" >
-                    <a href="{{url('/')}} " style="display:flex"><img src="{{asset('image/logo.webp')}}" style="width: 140px;"></a>
+                    <a href="{{url('/')}} " style="display:flex"><img src="{{asset('image/logo.webp')}}" style="width: 70px;"></a>
                 </div>
 
                 <!-- Search Bar -->
@@ -260,12 +260,12 @@
                                             </div>
                                         </div>
                                         <p class="address-text">
-                                            Calle Principal, 123<br>
-                                            28001 Madrid, España
+                                            Desactivado<br>
+                                            Desactivado
                                         </p>
                                         <div class="shipping-badge">
                                             <span class="shipping-dot"></span>
-                                            ENVÍO TERCIARIZADO
+                                            Desactivado
                                         </div>
                                     </div>
                                 </div>
