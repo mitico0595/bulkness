@@ -1,0 +1,606 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/image/fonts/material-icon.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 100;
+  src: url(/image/fonts/Kanit-Light.ttf);
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 100;
+  src: url(/image/fonts/Ubuntu.ttf);
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/image/fonts/PoiretOne-Regular.ttf) format('ttf');
+}
+
+*{
+  box-sizing: border-box;
+}
+.contador_fav{
+  background: linear-gradient(135deg, rgb(226,27,210) 0%,rgb(109,26,219) 100%);
+   border-radius: 20px;
+   width:10px;
+   padding:5px 7px;
+   color:white;
+   font-family: 'Zcool';
+   font-size: 10px;
+   position: relative;
+   height: 15px;
+   margin-left: 23px;
+}
+
+.shoppcart{
+  width:30px;
+  position: relative;
+  float: left;
+  
+  line-height: 80px;
+  display: inline;
+  
+  margin:10px 0px 0px 80px ;
+  cursor: pointer;
+}
+.shoppcart img{
+  width: 100%;
+  margin-top:15px;
+  position: absolute;
+  transition: .2s;
+}
+.shoppcart:hover img{
+  width:110%;
+  margin-top:12px;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  }
+
+body{
+	padding: 0;
+	margin:0;
+	height: 100%;
+}
+
+/* TOP */
+.top{
+  display: block;
+  width:100%;
+  height: 115px;
+  background: black;
+  margin:0;
+  padding:0;
+  border: 0px solid #000;
+  
+}
+.subtop{
+  display: block;
+  margin: auto;
+  width:90%;
+  height:100%;
+  min-width: 500px;
+}
+.top1{
+  width:100%;
+  position: absolute;
+  height: 30px;
+  background: #000;
+  left:0px;
+  top:0px;
+  
+}
+.top1contenido{
+  width:90%;
+  position: relative;
+  margin:auto;
+  height: 100%;
+}
+.top1position{
+  position: absolute;
+  right:0px;
+  width:380px;
+  height: 100%;
+  
+}
+.top1position div{
+  position: relative;
+  display: inline;
+  width: 25%;
+  padding-left:15px;
+  padding-right: 15px;
+  height: 100%;
+
+  border-left: 1px solid #ccc;
+
+}
+.top1position a{
+  color:white;
+  text-decoration: none;
+  line-height: 30px;
+  font-family: 'Kanit';
+  font-size: 13px;
+}
+.top1position div:hover a{
+  color:#ce0aba;
+}
+ /* ---- top 1 end ----- */
+ /* top 2 Search*/
+ .top2{
+  width: 25%;
+  position: relative;
+  float: left;
+  margin-top:25px;
+  height: 90px;
+  background: rgb(0,0,0,1);
+ }
+ .logo{
+  position: relative;
+  width: 50%;
+  margin:auto;
+  display: block;
+  line-height: 100px;
+ }
+ .logo img{
+  width: 90%; 
+  min-width: 130px;
+ }
+ /* top 2 buscar*/
+ .searchrect2{
+  position: absolute;
+  width:422px;
+  height: 44px;
+  background: #fff;
+  top:18px;
+  z-index: 2;
+  left:19px;
+  border-radius: 18px;
+ }
+.buscar{
+  width: 50%;
+  min-width: 400px;
+  position: relative;
+  float: left;
+  margin-top:25px;
+  height: 90px;
+  background: rgb(0,0,0,1);
+}
+
+ 
+.input-field input:focus  {
+  border-color: #ce0aba;
+  outline:0;
+  
+ }
+
+ 
+ .selectCat input:focus{
+  outline:0;
+  border-color: #ce0aba;
+ }
+ .selectCat input:focus-within{
+  border-color: #ce0aba;
+ }
+ 
+ .button button{
+  border-radius: 100px;
+  border: none;
+  padding:5px 7px;
+  transition: .9s;
+  background: none;
+ }
+ .button button:focus{
+  outline: 0;
+   
+ }
+ /* ITEMS  */
+ .items {
+
+  display: block;
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  
+ }
+ .subitems{
+  top: 50px;
+  position: relative;
+  width: 90%;
+  height: 100%;
+  margin:auto;
+  float:right;
+ }
+ 
+ /* FIRST STYLE*/
+ .firststyle{
+  position: relative;
+  width: 100%;  
+  
+  
+  border:1px solid #dedede;
+  border-radius: 20px;
+  
+  transition: .5s;
+  background: white;
+
+ }
+ .oferta{
+  position: absolute;
+  right: 0px;
+  top:0px;
+  width: 50px;
+ }
+ .imagenp{
+  
+  width:100%;
+  
+  background: rgba(0,0,0,.1);
+  
+ }
+ .firststyle div img{
+  width:100%;
+  position: relative;
+  display: block;
+  margin:auto;
+ }
+ .firststyle h4{
+  
+  
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 16px
+ }
+
+ .firststyle h5{
+  position: absolute;
+  bottom:0px;
+  left: 20px;
+  color:#cacaca;
+  font-family: 'Ubuntu';
+
+ }
+ .price{
+  border: none;
+    padding-left:20px;
+    width: 50%;
+    padding-top:20px;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    font-size: 20px;
+    
+ }
+.contenedorinput {
+    position: absolute;
+    font-family: 'Ubuntu';
+    background: none;
+    padding: 4px;
+    color: #000;
+    border: 1px solid #000;
+    top:265px;
+    left: 15%;
+    border-radius: 5px;
+    transition-duration: .5s;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    font-weight: 100;
+    width: 70%;
+}
+.Vendidos {
+    width:50%;
+    position: absolute;
+    bottom:45px;
+    left: 25px;
+    
+}
+.Vendidos span {
+    width:50%;
+    position: relative;
+    float:left;
+    display: inline;
+    font-family: 'Kanit QingKe HuangYou', cursive;
+    font-size: 14px;
+    color:808080;
+}
+.Vendidos h4{
+    width:25%;
+    left:-8px;
+    top:-3px;
+    font-size: 14px;
+    position: relative;
+    display: inline;
+    font-family: 'Kanit QingKe HuangYou', cursive;
+}
+.Codigo {
+    width:50%;
+    position: absolute;
+    bottom:45px;
+    right: -10px;
+    
+}
+.Codigo span {
+    width:40%;
+    position: relative;
+    float:left;
+    display: inline;
+    font-family: 'Kanit QingKe HuangYou', cursive;
+    font-size: 13px;
+}
+.Codigo h4{
+    width:50%;
+    top:-3px;
+    left:-8px;
+    font-size: 17px;
+    position: relative;
+    display: inline;
+    font-family: 'Kanit QingKe HuangYou', cursive;
+}
+.square {
+    width:100%;
+    height:8px;
+    
+    bottom:0px;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    transition: height .5s;
+    cursor: pointer;
+}
+.blue{
+    background: linear-gradient(135deg, rgba(4,186,206,1) 1%,rgba(66,47,191,1) 100%);
+}
+.firststyle:hover> .square {
+    height: 42px;
+}
+.firststyle:hover{
+  box-shadow: 1px 1px 15px #808080;
+  
+}
+.contenedorinput:hover {
+  
+}
+.heart {
+    position: absolute;
+    width:25px;
+    right:35px;
+    bottom:10px;
+    z-index:111;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    display: none;
+}
+.heart:hover{
+    transform: scale(1.1,1.1);
+    display: block;
+}
+.add {
+    position: absolute;
+    width:25px;
+    left:110px;
+    bottom:10px;
+    z-index:111;
+    transition-duration: 0.5s;
+    cursor: pointer
+}
+.add:hover{
+    transform: scale(1.2,1.2);
+}
+.information {
+    position: absolute;
+    width:25px;
+    left:35px;
+    bottom:10px;
+    z-index:111;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.information:hover{
+    transform: scale(1.5,1.5);
+}
+
+.backbottom {
+    width:100%;
+    height: 250px;
+    
+    top:1200px;
+    position: absolute;
+    z-index: -999;
+}
+/* CATEGORIA LEFT */ 
+.categoriavert{
+  top:200px;
+  position: fixed;
+  z-index: 9999;
+  background: #282828;
+  left:10px;
+  border-radius: 10px;
+}
+.categoriavert ul{
+  padding: 0px;
+  width:100%;
+  z-index: 99999;
+}
+.eachcat{
+  list-style: none;
+  position: relative;
+  display: block;
+  line-height: 25px;
+  height: 30px;
+  padding: 5px 15px;
+  align-content: center;
+  z-index: 9999;
+}
+
+.eachcat img{
+  width:20px;
+  vertical-align: middle;
+  z-index: 99999;
+}
+
+.eachcat:hover {
+  background: rgba(0,0,0,.5);
+}
+.firstly-c {
+  
+  position: fixed;
+  top:215px;
+  left:-200px;
+  background: rgba(0,0,0,.8);
+  width: 190px;
+  text-align: center;
+  padding: 5px 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1111;
+  line-height: 30px;
+}
+.firstly-c a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit';
+  z-index: -1111;
+  
+  height: 20px;
+  font-size: 16px;
+}
+.secondly-c {
+  
+  position: fixed;
+  top:255px;
+  left:-200px;
+  background: rgba(0,0,0,.8);
+  width: 190px;
+  text-align: center;
+  padding: 5px 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1111;
+  line-height: 30px;
+}
+.secondly-c a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit';
+  z-index: -1111;
+  height: 20px;
+  font-size: 16px;
+}
+.thirdly-c {
+  position: fixed;
+  top:295px;
+  left:-200px;
+  background: rgba(0,0,0,.8);
+  width: 190px;
+  text-align: center;
+  padding: 5px 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1111;
+  line-height: 30px;
+}
+.thirdly-c a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit';
+  z-index: -1111;
+  height: 20px;
+  font-size: 16px;
+}
+.fourthly-c {
+  position: fixed;
+  top:335px;
+  left:-200px;
+  background: rgba(0,0,0,.8);
+  width: 190px;
+  text-align: center;
+  padding: 5px 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1111;
+  line-height: 30px;
+}
+.fourthly-c a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit';
+  z-index: -1111;
+  height: 20px;
+  font-size: 16px;
+}
+.fifly-c {
+  position: fixed;
+  top:375px;
+  left:-200px;
+  background: rgba(0,0,0,.8);
+  width: 190px;
+  text-align: center;
+  padding: 5px 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1111;
+  line-height: 30px;
+}
+.fifly-c a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit';
+  z-index: -1111;
+  height: 20px;
+  font-size: 16px;
+}
+.sixly-c {
+  position: fixed;
+  top:415px;
+  left:-200px;
+  background: rgba(0,0,0,.8);
+  width: 190px;
+  text-align: center;
+  padding: 5px 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1111;
+  line-height: 30px;
+}
+.sixly-c a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit';
+  z-index: -1111;
+  height: 20px;
+  font-size: 16px;
+}
+.sevenly-c {
+  position: fixed;
+  top:455px;
+  left:-200px;
+  background: rgba(0,0,0,1);
+  width: 190px;
+  text-align: center;
+  padding: 5px 0px;
+  transition: 1s;
+  opacity: 0;
+  z-index: -1111;
+  line-height: 30px;
+}
+.sevenly-c a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Kanit';
+  z-index: -1111;
+  height: 20px;
+  font-size: 16px;
+}

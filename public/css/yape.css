@@ -1,0 +1,340 @@
+
+      .modal-overlay {
+            position: fixed;         
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(8px);            
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            top: 0;
+            left: 0;
+            height: 100vh;
+            overflow: hidden;
+            width: 100%;
+            
+        }
+
+        .modal-overlay.active { 
+            display: flex;
+            z-index: 9999; 
+            opacity: 1;
+            visibility: visible;
+        }
+        .modal-overlay.active .modal {
+            transform: scale(1);
+        }
+
+        .modal {
+            background: white;
+            border-radius: 24px;
+            width: 100%;
+            max-width: 440px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            overflow: hidden;
+            transform: scale(0.95);
+            animation: modalEnter 0.3s ease-out forwards;
+            margin: auto;
+        }
+
+        @keyframes modalEnter {
+            to {
+                transform: scale(1);
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, #722ED1 0%, #9254DE 100%);
+            padding: 24px;
+            text-align: center;
+            position: relative;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: rgba(255, 255, 255, 0.2);
+            border: none;
+            color: white;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s;
+        }
+
+        .close-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .yape-logo {
+            width: 64px;
+            height: 64px;
+            background: #ffffff1c;
+            border-radius: 16px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 24px;
+            color: #722ED1;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .modal-title {
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .modal-subtitle {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 16px;
+        }
+
+        .modal-body {
+            padding: 32px 24px 24px;
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+        }
+
+        .form-label {
+            display: block;
+            font-weight: 600;
+            color: #374151;
+            margin-bottom: 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #E5E7EB;
+            border-radius: 12px;
+            font-size: 16px;
+            transition: all 0.2s;
+            background: #F9FAFB;
+        }
+
+        .form-input:focus {
+            outline: none;
+            border-color: #722ED1;
+            background: white;
+            box-shadow: 0 0 0 4px rgba(114, 46, 209, 0.1);
+        }
+
+        .form-input::placeholder {
+            color: #9CA3AF;
+        }
+
+        .amount-display {
+            background: linear-gradient(135deg, #F0F9FF 0%, #E0F2FE 100%);
+            border: 2px solid #0EA5E9;
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
+
+        .currency {
+            color: #0EA5E9;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+
+        .amount {
+            font-size: 36px;
+            font-weight: 800;
+            color: #0F172A;
+            line-height: 1;
+        }
+
+        .pay-button {
+            width: 100%;
+            background: linear-gradient(135deg, #722ED1 0%, #9254DE 100%);
+            color: white;
+            border: none;
+            padding: 18px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.2s;
+            box-shadow: 0 8px 25px rgba(114, 46, 209, 0.3);
+        }
+
+        .pay-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 35px rgba(114, 46, 209, 0.4);
+        }
+
+        .pay-button:active {
+            transform: translateY(0);
+        }
+
+        .security-info {
+            margin-top: 20px;
+            padding: 16px;
+            background: #F0FDF4;
+            border: 1px solid #BBF7D0;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .security-icon {
+            width: 24px;
+            height: 24px;
+            background: #22C55E;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .security-text {
+            font-size: 14px;
+            color: #166534;
+        }
+
+        .input-group {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        @media (max-width: 480px) {
+            .modal {
+                margin: 16px;
+                max-width: none;
+            }
+            
+            .input-group {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .amount {
+                font-size: 28px;
+            }
+        }
+
+        /* Animación para los inputs */
+        .form-input {
+            position: relative;
+        }
+
+        .form-group {
+            position: relative;
+        }
+
+        .floating-label {
+            position: absolute;
+            top: 16px;
+            left: 16px;
+            color: #9CA3AF;
+            pointer-events: none;
+            transition: all 0.2s;
+            background: transparent;
+        }
+
+        .form-input:focus + .floating-label,
+        .form-input:not(:placeholder-shown) + .floating-label {
+            top: -8px;
+            left: 12px;
+            font-size: 12px;
+            color: #722ED1;
+            background: white;
+            padding: 0 4px;
+        }
+
+
+
+
+
+
+
+    
+    
+    .yape-option-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1.5px solid #ececec;
+  border-radius: 11px;
+  padding: 14px 21px;
+  gap: 16px;
+  margin: 20px 0 6px 0;
+  box-shadow: 0 2px 6px rgba(139, 49, 203, 0.04);
+  cursor: pointer;
+  transition: border .17s, box-shadow .16s, background .18s;
+  position: relative;
+  outline: none;
+  font-family: inherit;
+  text-align: left;
+}
+
+.yape-option-btn:focus,
+.yape-option-btn:hover {
+  border: 1.8px solid #8b31cb;
+  background: #f3edfa;
+  box-shadow: 0 4px 15px rgba(139,49,203,0.09);
+}
+
+.custom-radio {
+  width: 21px; height: 21px; min-width:21px;
+  border: 2px solid #8b31cb;
+  border-radius: 50%;
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  margin-right: 5px;
+}
+.yape-option-btn:active .custom-radio::after,
+.yape-option-btn:focus .custom-radio::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #8b31cb;
+  position: absolute;
+  left: 4px; top: 4px;
+}
+
+.yape-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border-radius: 50%;
+  width: 36px; height: 36px;
+  box-shadow: 0 2px 7px rgba(139,49,203,0.08);
+  flex-shrink: 0;
+}
+.pay-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1b1e25;
+}
+.pay-desc {
+  font-size: 13px;
+  color: #7a7d83;
+  margin-top: 2px;
+}

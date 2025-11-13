@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/image/fonts/material-icon.woff2) format('woff2');
+  }
+@font-face {
+    font-family: 'Kanit';
+    font-weight: 100;
+    src: url(/image/fonts/Kanit-Light.ttf);
+}
+@font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/image/fonts/PoiretOne-Regular.ttf) format('ttf');
+}
+@font-face {
+    font-family: 'Zcool';
+    src: url(/image/fonts/Zcool.ttf) ;
+}
+@font-face {
+    font-family: 'Dosis';
+    src: url(/image/fonts/dosism.ttf) ;
+}

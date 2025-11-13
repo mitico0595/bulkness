@@ -1,0 +1,91 @@
+/* ui-slider.css */
+:root{
+  /* Tamaños y look global */
+  --ui-track-h: 28px;
+  --ui-track-radius: 999px;
+  --ui-track-bg: #f1f5f9;          /* fondo del carril */
+  --ui-track-border: #e5e7eb;
+  --ui-fill-bg: linear-gradient(90deg, var(--accent,#fb4949), var(--accent-2,#ff1e1e));
+  --ui-thumb-size: 24px;
+  --ui-thumb-bg: #ffffff;
+  --ui-thumb-border: #e5e7eb;
+  --ui-thumb-shadow: 0 4px 12px rgba(17,24,39,.15);
+  --ui-value-bg: #111827;
+  --ui-value-color: #ffffff;
+  --ui-value-radius: 10px;
+  --ui-gap: 10px;
+}
+
+/* Wrapper base */
+.ui-slider{
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  gap: var(--ui-gap);
+  width: 100%;
+}
+
+/* El input nativo está arriba, invisible, para accesibilidad y teclado */
+.ui-slider__input{
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;         /* invisible, pero focusable */
+  z-index: 3;         /* recibe click y teclado */
+}
+
+/* Carril */
+.ui-slider__track{
+  position: relative;
+  height: var(--ui-track-h);
+  background: var(--ui-track-bg);
+  border: 1px solid var(--ui-track-border);
+  border-radius: var(--ui-track-radius);
+  overflow: hidden;
+  z-index: 1;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.6),
+    inset 0 -1px 0 rgba(0,0,0,.04);
+}
+
+/* Relleno */
+.ui-slider__fill{
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 0%;
+  background: var(--ui-fill-bg);
+}
+
+/* Thumb “bolita” */
+.ui-slider__thumb{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: var(--ui-thumb-size);
+  height: var(--ui-thumb-size);
+  border-radius: 50%;
+  background: var(--ui-thumb-bg);
+  border: 1px solid var(--ui-thumb-border);
+  box-shadow: var(--ui-thumb-shadow);
+  z-index: 2;
+}
+
+/* Label de valor */
+.ui-slider__value{
+  min-width: 40px;
+  text-align: right;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: var(--ui-value-bg);
+  color: var(--ui-value-color);
+  border-radius: var(--ui-value-radius);
+}
+
+/* Tamaños */
+.ui-slider--sm{ --ui-track-h: 22px; --ui-thumb-size: 18px; }
+.ui-slider--lg{ --ui-track-h: 36px; --ui-thumb-size: 28px; }
+
+/* Autoshow */
+.ui-slider.is-hidden{ display: none; }

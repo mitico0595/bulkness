@@ -1,0 +1,167 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Kanit';
+}
+@font-face {
+    font-family: 'Kanit';
+    font-weight: 100;
+    src: url(/image/fonts/Kanit-Light.ttf);
+  }
+.select:hover {
+    background:#c13434;
+    color:white;
+    cursor: pointer;
+
+}
+.kits {
+    transition: .2s;
+}
+.kits:hover {
+    background:#d11a1a;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.contentkit{
+    width:800px;padding-bottom:20px;
+}
+.subcontentkit{
+    width:100%;
+    height:70px;
+    border-radius:10px;
+    border:3px solid #c13434;
+    position:relative;
+    margin-top:40px;
+}
+.subcontentkit img{
+    width:130px;
+    position: absolute;
+    top:-35px;
+}
+.titlekit {
+    position:relative;
+    float:left;
+    display:inline-block;
+    margin-left:150px;
+    line-height:70px;
+}
+.etiquetakit{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70px;
+    width:250px;
+    float:left
+}
+.subetiqueta{
+    width:200px;
+    background:#c13434;
+    border-radius:10px;
+    height:40px;
+    border:3px solid #c13434 
+}
+.subkit{
+    position:relative;
+    float:left;
+    background:white;
+    border-radius:9px;
+    font-size:13px;
+    height:40px;
+    padding:0px 10px;
+    line-height:40px;
+}
+.subcosto{
+    position:relative; 
+    width:90px; 
+    float:left;
+    font-size:15px;
+    color:white;
+    text-align:center;
+    line-height:40px;
+}
+.subtotal{
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:70px;
+    width:200px;
+    float:left
+}
+.subpoint{
+    width:200px;
+    background:#c13434;
+    border-radius:10px;
+    height:40px;
+    border:3px solid #c13434 
+}
+.subtotaldesc{
+    position:relative;
+    float:left;
+    background:white;
+    border-radius:9px;
+    font-size:15px;
+    height:40px;
+    padding:0px 10px;
+    line-height:40px;
+}
+.subtodo{
+    position:relative; 
+    width:90px; 
+    float:left;
+    font-size:15px;
+    color:white;
+    text-align:center;
+    line-height:40px;
+}
+ /* Estilos del footer */
+ .footer {
+    background-color: #333;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-section {
+    color: white;
+    margin: 1rem;
+    flex: 1; /* Esto permite que cada sección tome el mismo ancho */
+    text-align: center;
+    position:relative;
+    float:left;
+    min-width:250px;
+    font-size:15px;
+}
+.footer-copyright {
+    color: white;
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+    font-size:13px;
+    color:#808080;
+}
+@media (max-width: 768px) { /* Punto de interrupción para dispositivos móviles */
+    .footer-section {
+        width: 100%; /* En pantallas pequeñas, las secciones toman el ancho completo */
+    }
+    .logo h2{
+        display:none
+    }
+    .feature-info{
+        width:100%;
+        
+    }
+    .feature-image{
+        width: 100%;
+    }
+    #menu{
+        display:inline-block;
+    }
+    #navegador{
+        position:sticky ;
+        top:0px;
+        z-index: 9999;
+    }
+}

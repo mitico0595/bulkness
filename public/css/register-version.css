@@ -1,0 +1,105 @@
+
+
+/*---------------------*/
+*{
+	box-sizing: border-box;
+    outline: 0;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/image/fonts/material-icon.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 100;
+  src: url(/image/fonts/Kanit-Light.ttf);
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/image/fonts/PoiretOne-Regular.ttf) format('ttf');
+}
+
+@font-face {
+  font-family: 'Dosis';
+  src: url(/image/fonts/dosism.ttf) ;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  }
+
+body{
+	padding: 0;
+	margin:0;
+	height: 100%;
+	background: #1f1f1f;
+}
+/* TOP */
+.contenido {
+	height: 50vh;
+    width: 100%;
+
+    top: 25vh;
+    position: absolute;
+    display: inline-block;
+}
+.content {
+	width: 80%;
+
+    height: 75%;
+    min-width: 310px;
+    margin: auto;
+    max-width: 500px;
+}
+.top{
+	position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 50%;
+    padding: 5px;
+}
+
+.bottom{
+	position: relative;
+    width: 100%;
+    display: inline-block;
+    height: 50%;
+    padding: 5px;
+
+}
+.border{
+	position: absolute;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #b10000;
+    height: 120px;
+}
+.letter{
+	position: absolute;
+	right: 50px;
+	font-size: 25px;
+	font-family: 'Dosis';
+	width: 50px;
+	top:30px;
+	color:black;
+
+}
+.imagen{
+	position: absolute;
+    left: 30px;
+    width: 80px;
+    top: 20px;
+}

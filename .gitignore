@@ -1,0 +1,28 @@
+# Dependencias y build
+/vendor/
+/node_modules/
+public/hot
+
+# Archivos sensibles
+.env
+.env.backup
+/storage/*.key
+
+# Storage público simbólico
+/public/storage
+
+/public/build/
+
+# Basura de SO y herramientas
+.DS_Store
+Thumbs.db
+npm-debug.log
+yarn-error.log
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+
+
+/public/build/
+!public/css/**
+!public/js/**

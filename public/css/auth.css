@@ -1,0 +1,771 @@
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/image/fonts/material-icon.woff2) format('woff2');
+  }
+  @font-face {
+    font-family: 'Kanit';
+    font-weight: 100;
+    src: url(/image/fonts/Kanit-Light.ttf);
+  }
+  @font-face {
+    font-family: 'Poiret One';
+    font-style: normal;
+    font-weight: 400;
+    src: url(/image/fonts/PoiretOne-Regular.ttf) format('ttf');
+  }
+  @font-face {
+    font-family: 'Zcool';
+    src: url(/image/fonts/Zcool.ttf) ;
+  }
+  @font-face {
+    font-family: 'Dosis';
+    src: url(/image/fonts/dosism.ttf) ;
+  }
+  select:focus {
+  outline:0;
+  }
+  .material-icons {
+    font-family: 'Material Icons';
+    font-weight: 100;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    }
+  
+  .template {
+    width:100%;
+    height: 100%;
+    display: block;
+    padding-top: 40px;
+   
+  }
+  .subtemplate{
+    width:450px;
+    height:500px;
+    position: relative;
+    margin:auto;
+    border:1px solid #dadce0;
+    border-radius: 7px;
+  
+  }
+  .part1{
+    
+    display: block;
+    position: relative;
+    float:left;
+  }
+  .part2{
+    width:50%;
+    position: relative;
+    display: block;
+    height: 200px;
+    float: left;
+  
+  }
+  .subtemplate_reg{
+    width:750px;
+    height:500px;
+    position: relative;
+    margin:auto;
+    border:1px solid #dadce0;
+    border-radius: 7px;
+  
+  }
+  .margentemplate{
+    padding: 40px;
+    width:100%;
+  }
+  .toptemplate{
+    display: block;
+    width:100%;
+  }
+  .toptemplate img{
+    width:150px;
+    display: block;
+    margin: auto;
+  
+  }
+  .toptemplate h6{
+    width:100%;
+    padding-left: 190px; 
+    margin-top: -10px;
+    font-family: 'Dosis';
+    font-size:25px;
+  }
+  
+  
+  .toptemplate_reg{
+    display: block;
+    width:100%;
+  }
+  .toptemplate_reg img{
+    width:100px;
+    display: block;
+    
+  
+  }
+  .toptemplate_reg h6{
+    width:100%;
+    margin-bottom:30px;
+    font-family: 'Dosis';
+    font-size:25px;
+  }
+  
+  .emailt{
+    width: 100%;
+    padding-top: 40px;
+    position: relative;
+    
+  }
+  .clavet{
+    width: 100%;
+    padding-top: 15px;
+    position: relative;
+  }
+  .namer{
+    width:40%;
+    position: relative;
+    float: left;
+    padding: 0;
+  }
+  .lastnamer{
+    width:60%;
+    position: relative;
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .cellr{
+    width:40%;
+    position: relative;
+    float: left;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .dnir{
+    width:60%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .direccionr{
+    width: 100%;
+    padding: 0;
+    float:left;
+  
+    position: relative;
+  }
+  .emailr{
+    width: 48%;
+    padding: 0;
+    float: left;
+    position: relative;
+    
+  }
+  .ciudadr{
+    width:33%;
+    position: relative;
+    float: left;
+    padding: 0;
+    padding-top: 10px;  
+  }
+  .provinciar{
+    width:33%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .distritor{
+    width:33%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .claver{
+    width:45%;
+    position: relative;
+    float:left;
+    
+    padding-left: 10px
+  }
+  .clave_confirmr{
+    width:45%;
+    position: relative;
+    float:left;
+    
+    padding-left: 10px
+  }
+  
+  
+  .inputcode{
+    width:100%;
+    display: block;
+    padding: 15px 20px;
+    border:1px solid #bababa;
+    border-radius: 5px;
+    line-height: 24px;
+    background: none;
+  }
+  .inputcode:focus{
+  outline:0;
+  border: 1px solid #b10000;
+  z-index: 1
+  }
+  .inputcode_reg {
+    width:100%;
+    display: block;
+    padding: 5px 20px;
+    font-size: 15px;
+    border:1px solid #dadce0;
+    border-radius: 5px;
+    line-height: 24px;
+    background: none;
+  }
+  .inputcode_reg:focus{
+  outline:0;
+  border: 1px solid #b10000;
+  z-index: 1
+  }
+  .dinamic_let{
+    position: absolute;
+    left:20px;
+    top:50px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 25px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamic_right{
+    position: absolute;
+    left:20px;
+    top:30px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 25px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+    z-index: -1;
+  }
+  .clue{
+    text-decoration: none;
+    color: #b10000;
+    width: 100%;
+    font-size: 12px;
+    
+    padding: 10px 0px;
+    display: block;
+  }
+  .clue:hover{
+    color:#000;
+    text-decoration: none;
+  }
+  .login_btn{
+    position: relative;
+    float:right;
+    width:150px;
+    margin-top:50px;
+    background: #b10000;
+    border:none;
+    border-radius: 5px;
+    padding: 5px 0px;
+    color: #fff;
+    font-family: 'Dosis';
+    transition: .2s;
+    border: 2px solid #b10000;
+  }
+  .login_btn:hover {
+    color: #b10000;
+    background: #fff;
+    border: 2px solid #b10000;
+  
+  }
+  .terminos{
+    color:#c2c2c2;
+    position: absolute;
+    bottom:-50px;
+    font-size: 12px;
+  }
+  .terminos a{
+    color:#b10000;
+  }
+  .registrar{
+    display: block;
+    color:#b10000;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-left:10px;
+    font-size: 17px;
+    transition: .5s;
+  }
+  .registrar:hover {
+    text-decoration: none;
+    color:inherit;
+    font-size: 16px;
+  }
+  
+  
+  .dinamicr1{
+    position: absolute;
+    left:10px;
+    top:10px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamicr2{
+    position: absolute;
+    left:20px;
+    top:10px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamicr3{
+    position: absolute;
+    left:10px;
+    top:20px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamicr4{
+    position: absolute;
+    left:20px;
+    top:20px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .allforall{
+    display: none;
+  }
+  @media (max-width: 600px){
+    .subtemplate {
+      width: 85%;
+      border:none;
+    }
+  
+  
+  .part1{
+    width:100%;
+    display: block;
+    position: relative;
+    float:left;
+  }
+  .part2{
+    display: none
+  
+  }
+  .subtemplate_reg{
+    width:100%;
+    height:500px;
+    position: relative;
+    margin:auto;
+    border:none;
+    border-radius: 7px;
+  
+  }
+  .margentemplate{
+    padding: 40px;
+    width:100%;
+  }
+  .toptemplate{
+    display: block;
+    width:100%;
+  }
+  .toptemplate img{
+    width:150px;
+    display: block;
+    margin: auto;
+  
+  }
+  .toptemplate h6{
+    width:100%;
+    padding-left: 190px; 
+    margin-top: -10px;
+    font-family: 'Dosis';
+    font-size:25px;
+  }
+  
+  
+  .toptemplate_reg{
+    display: block;
+    width:100%;
+  }
+  .toptemplate_reg img{
+    width:100px;
+    display: block;
+    
+  
+  }
+  .toptemplate_reg h6{
+    width:100%;
+    margin-bottom:30px;
+    font-family: 'Dosis';
+    font-size:25px;
+  }
+  
+  .emailt{
+    width: 100%;
+    padding-top: 40px;
+    position: relative;
+    
+  }
+  .clavet{
+    width: 100%;
+    padding-top: 15px;
+    position: relative;
+  }
+  .namer{
+    width:40%;
+    position: relative;
+    float: left;
+    padding: 0;
+  }
+  .lastnamer{
+    width:60%;
+    position: relative;
+    float: left;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .cellr{
+    width:40%;
+    position: relative;
+    float: left;
+    padding: 0;
+    padding-top: 10px;
+  }
+  .dnir{
+    width:60%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .direccionr{
+    width: 100%;
+    padding: 0;
+    float:left;
+  
+    position: relative;
+  }
+  .emailr{
+    width: 100%;
+    padding: 0;
+    float: left;
+    position: relative;
+    
+  }
+  .ciudadr{
+    width:33%;
+    position: relative;
+    float: left;
+    padding: 0;
+    padding-top: 10px;  
+  }
+  .provinciar{
+    width:33%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  .distritor{
+    width:33%;
+    position: relative;
+    float: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+  }
+  
+  .claver{
+    width:45%;
+    position: relative;
+    float:left;
+    
+    padding-left: 10px
+  }
+  .clave_confirmr{
+    width:45%;
+    position: relative;
+    float:left;
+    
+    padding-left: 10px
+  }
+  
+  
+  .inputcode{
+    width:100%;
+    display: block;
+    padding: 15px 20px;
+    border:1px solid #bababa;
+    border-radius: 5px;
+    line-height: 24px;
+    background: none;
+  }
+  .inputcode:focus{
+  outline:0;
+  border: 1px solid #b10000;
+  z-index: 1
+  }
+  .inputcode_reg {
+    width:100%;
+    display: block;
+    padding: 5px 20px;
+    font-size: 15px;
+    border:1px solid #dadce0;
+    border-radius: 5px;
+    line-height: 24px;
+    background: none;
+  }
+  .inputcode_reg:focus{
+  outline:0;
+  border: 1px solid #b10000;
+  z-index: 1
+  }
+  .dinamic_let{
+    position: absolute;
+    left:20px;
+    top:50px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 25px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamic_right{
+    position: absolute;
+    left:20px;
+    top:30px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 25px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+    z-index: -1;
+  }
+  .clue{
+    text-decoration: none;
+    color: #b10000;
+    width: 100%;
+    font-size: 12px;
+    
+    padding: 10px 0px;
+    display: block;
+  }
+  .clue:hover{
+    color:#000;
+    text-decoration: none;
+  }
+  .login_btn{
+    position: relative;
+    float:right;
+    width:150px;
+    margin-top:50px;
+    background: #b10000;
+    border:none;
+    border-radius: 5px;
+    padding: 5px 0px;
+    color: #fff;
+    font-family: 'Dosis';
+    transition: .2s;
+    border: 2px solid #b10000;
+  }
+  .login_btn:hover {
+    color: #b10000;
+    background: #fff;
+    border: 2px solid #b10000;
+  
+  }
+  .terminos{
+    color:#c2c2c2;
+    position: absolute;
+    bottom:0px;
+    font-size: 12px;
+    width: 84%;
+    bottom:-100px;
+  }
+  .terminos a{
+    color:#b10000;
+  }
+  .registrar{
+    display: block;
+    color:#b10000;
+    font-weight: bold;
+    margin-top: 13px;
+    margin-left:10px;
+    font-size: 17px;
+    transition: .5s;
+  }
+  .registrar:hover {
+    text-decoration: none;
+    color:inherit;
+    font-size: 16px;
+  }
+  
+  
+  .dinamicr1{
+    position: absolute;
+    left:10px;
+    top:10px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamicr2{
+    position: absolute;
+    left:20px;
+    top:10px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamicr3{
+    position: absolute;
+    left:10px;
+    top:20px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .dinamicr4{
+    position: absolute;
+    left:20px;
+    top:20px;
+    font-family: 'Dosis';
+    font-weight: 100;
+    font-size: 15px;
+    color:#8b9195;
+    background: #fff;
+    padding: 0px 5px; 
+    transition: .2s;
+    user-select: none;
+    cursor:text;
+  }
+  .correopadding{
+    padding-bottom: 10px;
+  }
+  
+  .allforall{
+      position: fixed;
+      bottom:0px;
+      width: 100%;
+      height: 60px;
+      background: #fff;
+      box-shadow: 1px -2px 5px #cecece; 
+      left:0px;
+      display: block;
+  }
+  .suball{
+      position: relative;
+      width:85%;
+      display:block;
+      margin: auto;
+      height: 100%
+  }
+  .subbase{
+      position: relative;
+      float: left;
+      box-sizing: border-box;
+      width:25%;
+      min-width: 50px;
+  }
+  .subbase h6{
+      font-size: 12px;
+      color: #000;
+      font-weight: 100;
+      float: left;
+      position: absolute;
+      
+      bottom:-25px;
+      font-family: 'Kanit';
+      
+      width: 100%;
+      text-align: center;
+  }
+  .usuario{
+      width:30px;
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 10px;
+  }
+  }

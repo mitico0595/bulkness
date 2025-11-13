@@ -1,0 +1,615 @@
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/image/fonts/material-icon.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'Kanit';
+  font-weight: 100;
+  src: url(/image/fonts/Kanit-Light.ttf);
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(/image/fonts/PoiretOne-Regular.ttf) format('ttf');
+}
+@font-face {
+  font-family: 'Zcool';
+  src: url(/image/fonts/Zcool.ttf) ;
+}
+@font-face {
+  font-family: 'Dosis';
+  src: url(/image/fonts/dosism.ttf) ;
+}
+select:focus {
+outline:0;
+}
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: 100;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  }
+  .closenew {
+	position: absolute;
+	right:20px;
+	z-index: 9999;
+	top:10px;
+}
+.contenedor{
+	position: relative;
+	width:90%;
+	margin:auto;
+	display: block;
+}
+	.titulo {
+		position: relative;
+		display: block;
+		width: 100%;
+	}
+.titulo h1{
+	font-family: 'Kanit';
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-weight: 800;
+}
+.add_ad{
+	    position: absolute;
+    right: 0;
+    width: 100px;
+    padding: 5px;
+    font-family: 'Kanit';
+    font-weight: bold;
+    text-decoration: none;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    text-align: center;
+    margin-left: 20%;
+    width: 100px;
+    font-size: 18px;
+    transition: .6s;
+}
+.add_ad:hover{
+	color:#000;
+	border:2px solid #282828;
+	background: #fff;
+	text-decoration: none;
+	font-size: 15px;
+
+}
+.tabla_envios{
+	position: relative;
+	width:80%;
+	position: block;
+	margin-top: 80px;
+
+}	
+.detalleSale{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	margin-top: 20px;
+	border-radius: 5px;
+	border: 1px solid #808080;
+	transition: .1s;
+	background: #fff;
+
+
+}
+.detalleSale:hover{	
+	background: #e5e5e5;
+	box-shadow: 1px 2px 10px #808080;
+}
+.subcon_articulo {
+	position: relative;
+	width:90%;
+	margin:auto;
+	display: block;
+}
+.fecha{
+	position: absolute;
+	top:-13px;
+	left:20px;
+	padding: 0px 5px;
+	background:linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+	color:#fff;
+	font-size: 12px;
+}
+.checkenvio {
+	position: relative;
+	width: 370px;
+	background:none;
+	height: 100%;
+	margin-left: 50px;
+	display: inline-block;
+}
+.circle_on{
+	position: absolute;
+	top:25px;
+	bottom:0px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+}
+.rect_1{
+	position: absolute;
+	top:36px;
+	left:24px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+	width: 78px;
+	height: 3px;
+	box-shadow: 0px 0px 3px #5b01c1;
+}
+
+.circle_on_1{
+	position: absolute;
+	top:25px;
+	left: 100px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+}
+.rect_11{
+	position: absolute;
+	top:36px;
+	left:24px;
+	background: #bababa;
+	width: 78px;
+	height: 3px;
+	box-shadow: 0px 0px 1px inset #bababa;
+}
+.circle_on_11{
+	position: absolute;
+	top:25px;
+	left: 100px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: #bababa;
+}
+.rect_3{
+	position: absolute;
+	top:36px;
+	left:125px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+	width: 78px;
+	height: 3px;
+	box-shadow: 0px 0px 3px #5b01c1;
+}
+
+.circle_on_3{
+	position: absolute;
+	top:25px;
+	left: 200px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+}
+.rect3{
+	position: absolute;
+	top:36px;
+	left:125px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+	width: 78px;
+	height: 3px;
+	box-shadow: 0px 0px 3px #5b01c1;
+}
+
+.circle_on3{
+	position: absolute;
+	top:25px;
+	left: 200px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+}
+.rect_33{
+	position: absolute;
+	top:36px;
+	left:125px;
+	background: #bababa;
+	width: 78px;
+	height: 3px;
+	box-shadow: 0px 0px 1px inset #bababa;
+}
+
+.circle_on_33{
+	position: absolute;
+	top:25px;
+	left: 200px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: #bababa;
+}
+
+.rect4{
+	position: absolute;
+	top:36px;
+	left:225px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+	width: 78px;
+	height: 3px;
+	box-shadow: 0px 0px 3px #5b01c1;
+}
+
+.circle_on4{
+	position: absolute;
+	top:25px;
+	left: 300px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: linear-gradient(135deg, rgba(141,41,199,1) 0%,rgba(105,26,194,1) 100%);
+}
+.rect44{
+	position: absolute;
+	top:36px;
+	left:225px;
+	background: #bababa;
+	width: 78px;
+	height: 3px;
+	box-shadow: 0px 0px 1px inset #bababa;
+}
+
+.circle_on44{
+	position: absolute;
+	top:25px;
+	left: 300px;
+	width:25px;
+	height: 25px;
+	border-radius: 50px;
+	background: #bababa;
+}
+
+.seccion{
+	position: relative;
+	width: 300px;
+	
+	display: inline-block;
+	height: 100%;
+	
+
+}
+.namedet {
+	position: absolute;
+	top:10px;
+	width: 100%;
+
+}
+.namedet h1{
+	font-size: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: 'Arial';
+	font-weight: bold;
+	color: #5b01c1;
+}
+.eleccion {
+	position: absolute;
+	top:25px;
+	width: 100%;
+
+}
+.eleccion h1{
+	font-size: 12px;
+	text-align: center;
+	
+	font-family: 'Arial';
+	
+	color: #5b01c1;
+}
+.entregado {
+	position: absolute;
+	top:40px;
+	width: 100%;
+
+}
+.entregado h1{
+	font-size: 10px;
+	text-align: center;
+	
+	font-family: 'Arial';
+	
+	color: #5b01c1;
+}
+.editando {
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:75px;
+	height: 100%;
+	background: #751fc4;
+	transition: .1s;
+}
+.editando:hover{
+	background: #a537e5;
+}
+.editando img{
+	width: 55px;
+	margin-top: 10px;
+}
+.editando a {
+	padding: 0px 15px;
+}
+.section1{
+	position: relative;
+	display: block;
+	width: 100%;
+	margin-top: 20px;
+}
+.sectionone{
+	position: relative;
+	width:100px;
+	font-size: 14px;
+	display: inline-block;
+}
+.section1 input{
+	background: none;
+	color:#000;
+	border:none;
+	border-bottom:2px solid #282828;
+	border-radius: 0;
+	width: 50%;
+	display: inline-block;
+	position: relative;
+}
+.sectionbool{
+	position: absolute;
+	top:0px;
+	right: 0px;
+	width:110px;
+	
+}
+.subit{
+	width: 50%;
+	display: inline;
+	position: relative;
+}
+.sectionbool input{
+	position: relative;
+	width: 50px;
+	display: inline-block;
+
+}
+.sectionbool span{
+	width: 40%;
+	position: absolute;
+	display: inline;
+	top:-19px;
+	left: 19px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ede10b;
+}
+.observar{
+	position: absolute;
+	right:130px;
+	bottom:-5px;
+	width:40px; 
+	text-decoration: none;
+	cursor: pointer;
+	text-align:center;
+	font-size: 18px;
+	transition: .5s;		
+}
+.observar:hover{
+	transform: scale(1.2);
+}
+.tope{
+	display: inline-block;
+	position: relative;
+	width:100%;
+	padding: 20px 50px;
+}
+.tope h5{
+	width: 80%;
+	position: relative;
+	display: inline-block;
+	font-size: 20px;
+
+}
+.detalle_envio{
+	width: 90%;
+	margin:auto;
+	border: 1px dashed #acacac;
+	border-radius: 10px;
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+.partleft{
+	position: relative;
+	float:left;
+	width: 340px;
+
+	display: inline-block;
+}
+.partright{
+	position: relative;
+	display: inline-block;
+	width: 340px;
+	float: left;
+}
+.leftdata{
+	position: relative;
+	float:left;
+	width:120px;
+	display: inline-block;
+
+}
+.leftdata h5{
+	text-align: right;
+	font-size: 12px;
+	margin-bottom: 4px;
+}
+.rightdata{
+	position: relative;
+	float:left;
+	display: inline-block;
+	width: 200px;
+	margin-left: 10px;
+}
+.rightdata h5{
+	text-align: left;
+	font-size: 12px;
+	margin-bottom: 4px;
+}
+.proceso{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	margin-top: 35px;
+}
+.subproceso {
+	position: relative;
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+.process {
+	position: relative;
+	width:140px;
+	float: left;
+	display: inline-block;
+}
+.process img{
+	width: 50px;
+	position: relative;
+	margin:auto;
+	display: block;
+	margin-top: 15px;
+}
+.circlesend{
+	position: absolute;
+	width:80px;
+	height: 80px;
+	background: #bababa;
+	border-radius: 40px;
+	left: 20%;
+	transition: .2s;
+}
+.svgembale{
+	transition: .5s;
+}
+.svgembale:hover{
+	transform: scale(0.7);
+}
+.rectangulo {
+	position: absolute;
+	width:63px;
+	height:10px;
+	background: #bababa;
+	left:-33px;
+	top:35px;
+}
+.circpur {
+	background: #930591;
+	box-shadow: 0px 0px 8px #930591;
+}
+.fecha_hora{
+	position: relative;
+	width: 50%;
+	display: inline-block;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	margin-left: 20px;
+}
+.subfecha_hora{
+	display: block;
+	margin:auto;
+	width: 90%;
+	border-radius: 10px 10px 0px 0px;
+	border:1px dashed #282828;
+}
+.lane1{
+	position: relative;
+	width: 100%;
+	height: 25px;
+	border-bottom: 1px dashed #808080;
+	display: inline-block;
+}
+.le{
+	width: 50%;
+	position: relative;
+	float: left;
+
+}
+.le h5{
+	font-size: 14px;
+	
+	text-align: center;
+
+}
+.ri {
+	width: 49%;
+	position: relative;
+	float: right;
+	line-height: 50px;
+	text-align: center;
+}
+.ri h5{
+	font-size: 12px;
+	text-align: center;
+}
+.photo{
+	position: absolute;
+	top:15px;
+	right:70px;
+	width:50px;
+	height: 100%;
+	transition: .1s;
+}
+.photo:hover{
+	transform: scale(1.2);
+}
+.photo img{
+	width: 35px;
+	margin-top: 10px;
+}
+.documentos{
+	position: relative;
+	display: inline-block;
+	width: 45%;
+	float:left;
+	margin-top: 35px;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px dashed #cacaca;
+}
+.cemb{
+	width:50px;
+	position: relative;
+	display: inline-block;
+	float: left;
+	transition: .5s;
+	cursor: pointer;
+}
+.cemb:hover{
+	width: 60px;
+	border-radius: 5px;
+}
+.cembUp{
+	width: 100%;
+	display: block;
+	position: relative;
+	margin: auto;
+}
+
