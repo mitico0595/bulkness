@@ -133,7 +133,7 @@
     <header class="header">
       <a href="{{asset('/')}}"><div class="logo" aria-hidden="true"><img src="{{asset('image/logop.webp')}}" alt="" style="width:100%"></div></a>
       <h1 class="title">Crea tu cuenta</h1>
-      <p class="subtitle">Únete a Amigurumis.pe</p>
+      <p class="subtitle">Únete a bulknessperu.com</p>
     </header>
 
     <section class="card" style="background: none;  box-shadow: none;" >
